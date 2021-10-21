@@ -1,0 +1,48 @@
+.header {
+  background-color: sienna;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.nav a {
+  text-decoration: none;
+  border: 0px solid sandybrown;
+  border-bottom-width: 0px;
+  color: sandybrown;
+  transition: font-size 0.3s;
+}
+
+.nav a:hover {
+  border: 0px solid sandybrown;
+  border-bottom-width: 1px;
+}
+.nav a:active,
+.nav a.active {
+  color: white;
+  border: 0px solid white;
+  border-bottom-width: 1px;
+  transform: scale(1.5);
+}

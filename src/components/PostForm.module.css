@@ -1,0 +1,69 @@
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  /* background-color: #f0f0f0; */
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.control input:focus,
+.control select:focus,
+.control textarea:focus {
+  /* background-color: #f0f0f0; */
+  outline-color: sandybrown;
+}
+
+.control select {
+  border: 1px solid #c1d1d1;
+  border-radius: 4px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  /* padding: 1rem; */
+  border-radius: 5px;
+  background-color: sienna;
+  color: white;
+  font-size: 1.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.actions button:hover {
+  transform: scale(1.1);
+}
