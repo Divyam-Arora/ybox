@@ -7,6 +7,15 @@ const Post = function (props) {
     ) : (
       <img src={props.el.url} alt={props.el.title}></img>
     );
+
+  const humanDate = (date) => {
+    return new Intl.DateTimeFormat("en-US", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    }).format(new Date(date));
+  };
+
   return (
     <li className={classes.list_el}>
       <h4>{`@ ${props.el.owner ?? "anonymous"}`}</h4>
@@ -15,7 +24,7 @@ const Post = function (props) {
       <div className={classes.content}>
         <h2>{props.el.title}</h2>
         <p>{props.el.description}</p>
-        <p>{props.el.date}</p>
+        <p>{humanDate(props.el.date)}</p>
       </div>
     </li>
   );
